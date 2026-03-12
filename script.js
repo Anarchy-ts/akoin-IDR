@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  // ---------- Mobile Navigation Toggle ----------
+  // ---------- NAVBAR ----------
   var toggle = document.getElementById('navToggle');
   var navLinks = document.getElementById('navLinks');
 
@@ -10,8 +10,8 @@
     navLinks.classList.toggle('open');
   });
 
-  // Close mobile menu when a link is clicked
   var links = navLinks.querySelectorAll('a');
+
   links.forEach(function (link) {
     link.addEventListener('click', function () {
       toggle.classList.remove('active');
@@ -19,22 +19,67 @@
     });
   });
 
-  // ---------- Contact Form ----------
+  // ---------- CONTACT FORM ----------
   var form = document.getElementById('contactForm');
   var toast = document.getElementById('toast');
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    // Show toast
     toast.classList.add('visible');
-
-    // Reset form
     form.reset();
 
-    // Hide toast after 4 seconds
     setTimeout(function () {
       toast.classList.remove('visible');
     }, 4000);
   });
+
+  // ---------- HEXAGON INTERACTION ----------
+
+  var slices = document.querySelectorAll('.slice');
+  var title = document.getElementById('hexTitle');
+  var desc = document.getElementById('hexDesc');
+
+  var activeSlice = null;
+
+  slices.forEach(function (slice) {
+
+    // HOVER PREVIEW
+    slice.addEventListener('mouseenter', function () {
+
+      if (!activeSlice) {
+        title.textContent = slice.dataset.title;
+        desc.textContent = slice.dataset.desc;
+      }
+
+    });
+
+    // REMOVE PREVIEW
+    slice.addEventListener('mouseleave', function () {
+
+      if (!activeSlice) {
+        title.textContent = "";
+        desc.textContent = "";
+      }
+
+    });
+
+    // CLICK LOCK
+    slice.addEventListener('click', function () {
+
+      slices.forEach(function (s) {
+        s.classList.remove('active');
+      });
+
+      slice.classList.add('active');
+
+      title.textContent = slice.dataset.title;
+      desc.textContent = slice.dataset.desc;
+
+      activeSlice = slice;
+
+    });
+
+  });
+
 })();
