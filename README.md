@@ -35,6 +35,68 @@ The design reflects a **technology-focused, professional, and minimalist aesthet
 
 ---
 
+# Features
+
+### Interactive Hexagon Hero
+- Animated **hexagon “slice” interface** in the hero section
+- Each slice represents a key domain of digital risk
+- Hover and click interactions reveal additional information
+- Smooth reveal animation for each slice
+
+### Responsive Navigation
+- **Sticky navigation bar**
+- Mobile-friendly **hamburger menu**
+- Smooth scrolling to page sections
+
+### Modern UI Design
+- Clean **minimalist tech aesthetic**
+- Consistent **orange / black / white** color palette
+- Professional typography using **Google Fonts (Inter)**
+
+### Animated Hero Section
+- Subtle **radial gradient background**
+- Fade-in content animations
+- Interactive hex graphic that scales on hover
+
+### Service Pillars Cards
+- Card-based layout presenting:
+  - Academy
+  - Innovation & Incubation
+  - Advisory Services
+- Hover elevation effects for improved UX
+
+### Responsive Layout
+- Built using **CSS Grid and Flexbox**
+- Fully responsive across:
+  - Desktop
+  - Tablet
+  - Mobile
+
+### Community Section
+Clear presentation of target audiences:
+
+- Students
+- Early-career professionals
+- Risk practitioners
+
+### Contact Form
+- Register interest form
+- Input validation
+- Submission feedback using a **toast notification**
+
+### Accessibility & UX
+- Semantic HTML structure
+- Accessible color contrast
+- Hover states and interactive feedback
+- Smooth UI transitions
+
+### Performance
+- No frameworks used
+- Lightweight **vanilla HTML / CSS / JS**
+- Fast loading and minimal dependencies
+
+---
+
 # Logo Design
 
 The logo represents **structure, resilience, and risk management**, using a **geometric cube-inspired design**.
