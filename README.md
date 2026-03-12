@@ -1,7 +1,20 @@
-## Preview
+## Project Preview
 
-![Homepage Screenshot](assets/homepage.png)
-![Logo](assets/logo.svg)
+<p align="center">
+  <img src="assets/logo.svg" width="220"/>
+</p>
+
+<p align="center">
+  <img src="assets/homepage.png" width="900"/>
+</p>
+
+### Hero Component Variants
+
+<p align="center">
+  <img src="assets/hex-slice1.png" width="30%">
+  <img src="assets/hex-slice2.png" width="30%">
+  <img src="assets/hex-slice3.png" width="30%">
+</p>
 
 # Institute of Digital Risk (IDR) – Brand & Homepage Design
 
